@@ -23,13 +23,13 @@ class AddEmp extends Component{
         return(
             <React.Fragment>
                 <div className="m-5 card">
-                <div class="card-header">
+                <div className="card-header">
                     <span className='badge badge-success'>Dashboard</span>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Available Employees: {this.state.avail}</h5>
-                    <h5 class="card-title">Total Employees: {this.state.total}</h5>
-                    <button type="button" class="btn btn-primary" onClick={() => this.setModal1Visible(true)}><strong>+</strong> Add Employee</button>
+                <div className="card-body">
+                    <h5 className="card-title">Available Employees: {this.state.avail}</h5>
+                    <h5 className="card-title">Total Employees: {this.state.total}</h5>
+                    <button type="button" className="btn btn-primary" onClick={() => this.setModal1Visible(true)}><strong>+</strong> Add Employee</button>
                 </div>
                 </div>
 

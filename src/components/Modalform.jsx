@@ -28,8 +28,12 @@ class InpForm extends Component{
         }
         sessionStorage.setItem('empid',JSON.stringify([values.name,values.gender,values.age,values.department]));
 
-        console.log(values.gender);
-        console.log(values.date);
+        console.log(`Employee Name: ${values.name}`);
+        console.log(`Employee Gender: ${values.gender}`);
+        console.log(`Employee Age: ${values.age}`);
+        console.log(`Employee Designation: ${values.designation}`);
+        console.log(`Employee Department: ${values.department}`);
+        console.log(`Employee Join Date: ${values.date}`);
       };
 
     render(){

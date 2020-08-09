@@ -41,11 +41,9 @@ class Table extends Component{
                     <tr>
                     <th scope="row">Emp 1</th>
                     <td>Frontend Development</td>
-                    <td><div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                        <label class="form-check-label" for="defaultCheck1">
-                            Checkbox
-                        </label>
+                    <td><div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label className="form-check-label" for="defaultCheck1"></label>
                         </div>
                     </td>
                     <td><ButtonFnc /></td>
@@ -53,11 +51,9 @@ class Table extends Component{
                     <tr>
                     <th scope="row">Emp 2</th>
                     <td>Backend Development</td>
-                    <td><div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                        <label class="form-check-label" for="defaultCheck1">
-                            Checkbox
-                        </label>
+                    <td><div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label className="form-check-label" for="defaultCheck1"></label>
                         </div>
                     </td>
                     <td><ButtonFnc /></td>
@@ -65,11 +61,9 @@ class Table extends Component{
                     <tr>
                     <th scope="row">Emp 3</th>
                     <td>Testing</td>
-                    <td><div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                        <label class="form-check-label" for="defaultCheck1">
-                            Checkbox
-                        </label>
+                    <td><div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label className="form-check-label" for="defaultCheck1"></label>
                         </div>
                     </td>
                     <td><ButtonFnc /></td>
@@ -78,11 +72,9 @@ class Table extends Component{
                     <tr>
                     <th scope="row">Emp 4</th>
                     <td>Deployment</td>
-                    <td><div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                        <label class="form-check-label" for="defaultCheck1">
-                            Checkbox
-                        </label>
+                    <td><div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label className="form-check-label" for="defaultCheck1"></label>
                         </div>
                     </td>
                     <td><ButtonFnc /></td>
