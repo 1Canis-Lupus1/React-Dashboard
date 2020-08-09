@@ -1,4 +1,5 @@
-import React,{ Component } from 'react'
+import React,{ Component } from 'react';
+import { Modal, Button } from 'antd';
 
 class AddEmp extends Component{
     constructor(){
@@ -6,9 +7,14 @@ class AddEmp extends Component{
 
         this.state={
             avail: 0,
-            total: 0
+            total: 0,
+            modal1Visible: false
         }
     }
+
+    setModal1Visible(modal1Visible) {
+        this.setState({ modal1Visible });
+      }
 
     render(){
         return(
@@ -20,9 +26,23 @@ class AddEmp extends Component{
                 <div class="card-body">
                     <h5 class="card-title">Available Employees: {this.state.avail}</h5>
                     <h5 class="card-title">Total Employees: {this.state.total}</h5>
-                    <a href="#" class="btn btn-primary"><strong>+</strong> Add Employee</a>
+                    <button type="button" class="btn btn-primary" onClick={() => this.setModal1Visible(true)}><strong>+</strong> Add Employee</button>
                 </div>
                 </div>
+
+                {/* Antd Modal */}
+                <Modal
+                title="20px to Top"
+                style={{ top: 20 }}
+                visible={this.state.modal1Visible}
+                onOk={() => this.setModal1Visible(false)}
+                onCancel={() => this.setModal1Visible(false)}
+                >
+                <p>some contents...</p>
+                <p>some contents...</p>
+                <p>some contents...</p>
+                </Modal>
+                
             </React.Fragment>
         )
     }

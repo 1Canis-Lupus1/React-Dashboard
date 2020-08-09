@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import AddEmp from './components/Addnew';
 import Table from './components/Displaytab';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'antd/dist/antd.css';
 
 function App() {
   return (
