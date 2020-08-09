@@ -15,7 +15,7 @@ class AddEmp extends Component{
             <React.Fragment>
                 <div class="card">
                 <div class="card-header">
-                    <span className='badge badge-success'>OverView</span>
+                    <span className='badge badge-success'>Dashboard</span>
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Available Employees: {this.state.avail}</h5>
