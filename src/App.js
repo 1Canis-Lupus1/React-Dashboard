@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 function App() {
   return (
     <div className="App">
-      <Navbar style={{ margin:'30'}}/>
+      <Navbar />
       <AddEmp />
       <Table />
     </div>

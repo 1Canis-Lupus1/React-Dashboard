@@ -9,7 +9,7 @@ class Table extends Component{
     render(){
         return (
             <React.Fragment>
-                <table class="table table-hover table-dark">
+                <table className="m-1 table table-hover table-dark">
                 <thead>
                     <tr>
                     <th scope="col">Name</th>

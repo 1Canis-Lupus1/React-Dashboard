@@ -13,7 +13,7 @@ class AddEmp extends Component{
     render(){
         return(
             <React.Fragment>
-                <div class="card">
+                <div className="m-5 card">
                 <div class="card-header">
                     <span className='badge badge-success'>Dashboard</span>
                 </div>
