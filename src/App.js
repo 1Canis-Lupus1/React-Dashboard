@@ -3,6 +3,7 @@ import React from 'react';
 // import './App.css';
 import Navbar from './components/Navbar';
 import AddEmp from './components/Addnew';
+import Table from './components/Displaytab';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <Navbar />
       <AddEmp />
+      <Table />
     </div>
   );
 }
