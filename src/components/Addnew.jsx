@@ -1,3 +1,5 @@
+// Middle Component(Dashboard)
+
 import React,{ Component } from 'react';
 import { Modal, Button } from 'antd';
 import InpForm from './Modalform';
@@ -38,7 +40,7 @@ class AddEmp extends Component{
                 visible={this.state.modal1Visible}
                 onOk={() => this.setModal1Visible(false)}
                 onCancel={() => this.setModal1Visible(false)}
-                >
+                footer={null}                >
                 <InpForm />
                 </Modal>
                 

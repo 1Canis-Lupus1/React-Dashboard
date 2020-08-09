@@ -1,3 +1,5 @@
+// Lower Component(Table)
+
 import React,{ Component } from 'react';
 import ButtonFnc from './Button';
 import { Modal, Button } from 'antd';
@@ -7,13 +9,21 @@ class Table extends Component{
     constructor(){
         super();
         this.state={
-            modal1Visible: false
+            modal1Visible: false,
+            Emp:[]
         }
     }
 
     setModal1Visible(modal1Visible) {
         this.setState({ modal1Visible });
       }
+
+    componentDidUpdate(){
+        let n=sessionStorage.length;
+        for(let i=0;i<n;i++){
+            console.log(sessionStorage.getItem('empid'));
+        }
+    }
 
     render(){
         return (

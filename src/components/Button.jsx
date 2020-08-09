@@ -6,11 +6,12 @@ class ButtonFnc extends Component{
     constructor(){
         super();
         this.state={
-            modal1Visible:false
+            modal1Visible:false,
+            modal2Visible:false
         }
     }
 
-    setModal1Visible(modal1Visible) {
+    setModal1Visible=(modal1Visible)=> {
         this.setState({ modal1Visible });
       }
 
