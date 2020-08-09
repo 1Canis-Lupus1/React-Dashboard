@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import { Modal, Button } from 'antd';
-import Form from './Modalform';
+import InpForm from './Modalform';
 
 class AddEmp extends Component{
     constructor(){
@@ -39,7 +39,7 @@ class AddEmp extends Component{
                 onOk={() => this.setModal1Visible(false)}
                 onCancel={() => this.setModal1Visible(false)}
                 >
-                <Form />
+                <InpForm />
                 </Modal>
                 
             </React.Fragment>
