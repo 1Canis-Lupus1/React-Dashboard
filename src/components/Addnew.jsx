@@ -1,5 +1,6 @@
 import React,{ Component } from 'react';
 import { Modal, Button } from 'antd';
+import Form from './Modalform';
 
 class AddEmp extends Component{
     constructor(){
@@ -32,15 +33,13 @@ class AddEmp extends Component{
 
                 {/* Antd Modal */}
                 <Modal
-                title="20px to Top"
+                title="Add Employee"
                 style={{ top: 20 }}
                 visible={this.state.modal1Visible}
                 onOk={() => this.setModal1Visible(false)}
                 onCancel={() => this.setModal1Visible(false)}
                 >
-                <p>some contents...</p>
-                <p>some contents...</p>
-                <p>some contents...</p>
+                <Form />
                 </Modal>
                 
             </React.Fragment>
