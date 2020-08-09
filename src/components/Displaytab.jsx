@@ -1,4 +1,5 @@
 import React,{ Component } from 'react';
+import Button from './Button';
 
 class Table extends Component{
     constructor(){
@@ -28,7 +29,7 @@ class Table extends Component{
                         </label>
                         </div>
                     </td>
-                    <td>edit and delete button</td>
+                    <td><Button /></td>
                     </tr>
                     <tr>
                     <th scope="row">Emp 2</th>
@@ -40,7 +41,7 @@ class Table extends Component{
                         </label>
                         </div>
                     </td>
-                    <td>@fat</td>
+                    <td><Button /></td>
                     </tr>
                     <tr>
                     <th scope="row">Emp 3</th>
@@ -52,7 +53,7 @@ class Table extends Component{
                         </label>
                         </div>
                     </td>
-                    <td>@twitter</td>
+                    <td><Button /></td>
                     {/* <td colspan="2">Larry the Bird</td> */}
                     </tr>
                     <tr>
@@ -65,7 +66,7 @@ class Table extends Component{
                         </label>
                         </div>
                     </td>
-                    <td>@fat</td>
+                    <td><Button /></td>
                     </tr>
                 </tbody>
                 </table>
