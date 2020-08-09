@@ -10,6 +10,7 @@ class Table extends Component{
         super();
         this.state={
             modal1Visible: false,
+            //For storing Employee Datas when received from session storage
             Emp:[]
         }
     }
@@ -18,6 +19,7 @@ class Table extends Component{
         this.setState({ modal1Visible });
       }
 
+    //Unable To extract data from session storage and showing it here 
     componentDidUpdate(){
         let n=sessionStorage.length;
         for(let i=0;i<n;i++){
@@ -27,6 +29,7 @@ class Table extends Component{
 
     render(){
         return (
+            // Hard-coded Values in the Table Unable to display data from Session Storage here
             <React.Fragment>
                 <table className="m-1 table table-hover table-dark">
                 <thead>
@@ -38,6 +41,7 @@ class Table extends Component{
                     </tr>
                 </thead>
                 <tbody>
+                    
                     <tr>
                     <th scope="row">Emp 1</th>
                     <td>Frontend Development</td>
@@ -48,6 +52,7 @@ class Table extends Component{
                     </td>
                     <td><ButtonFnc /></td>
                     </tr>
+
                     <tr>
                     <th scope="row">Emp 2</th>
                     <td>Backend Development</td>
@@ -58,6 +63,7 @@ class Table extends Component{
                     </td>
                     <td><ButtonFnc /></td>
                     </tr>
+
                     <tr>
                     <th scope="row">Emp 3</th>
                     <td>Testing</td>
@@ -67,8 +73,8 @@ class Table extends Component{
                         </div>
                     </td>
                     <td><ButtonFnc /></td>
-                    {/* <td colspan="2">Larry the Bird</td> */}
                     </tr>
+
                     <tr>
                     <th scope="row">Emp 4</th>
                     <td>Deployment</td>
@@ -79,6 +85,7 @@ class Table extends Component{
                     </td>
                     <td><ButtonFnc /></td>
                     </tr>
+
                 </tbody>
                 </table>
 
