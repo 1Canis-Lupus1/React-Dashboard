@@ -1,10 +1,19 @@
 import React,{ Component } from 'react';
-import Button from './Button';
+import ButtonFnc from './Button';
+import { Modal, Button } from 'antd';
+import InpForm from './Modalform';
 
 class Table extends Component{
     constructor(){
         super();
+        this.state={
+            modal1Visible: false
+        }
     }
+
+    setModal1Visible(modal1Visible) {
+        this.setState({ modal1Visible });
+      }
 
     render(){
         return (
@@ -29,7 +38,7 @@ class Table extends Component{
                         </label>
                         </div>
                     </td>
-                    <td><Button /></td>
+                    <td><ButtonFnc /></td>
                     </tr>
                     <tr>
                     <th scope="row">Emp 2</th>
@@ -41,7 +50,7 @@ class Table extends Component{
                         </label>
                         </div>
                     </td>
-                    <td><Button /></td>
+                    <td><ButtonFnc /></td>
                     </tr>
                     <tr>
                     <th scope="row">Emp 3</th>
@@ -53,7 +62,7 @@ class Table extends Component{
                         </label>
                         </div>
                     </td>
-                    <td><Button /></td>
+                    <td><ButtonFnc /></td>
                     {/* <td colspan="2">Larry the Bird</td> */}
                     </tr>
                     <tr>
@@ -66,10 +75,21 @@ class Table extends Component{
                         </label>
                         </div>
                     </td>
-                    <td><Button /></td>
+                    <td><ButtonFnc /></td>
                     </tr>
                 </tbody>
                 </table>
+
+                {/* Antd Modal */}
+                <Modal
+                title="Add Employee"
+                style={{ top: 20 }}
+                visible={this.state.modal1Visible}
+                onOk={() => this.setModal1Visible(false)}
+                onCancel={() => this.setModal1Visible(false)}
+                >
+                <InpForm />
+                </Modal>
             </React.Fragment>
         )
     }
