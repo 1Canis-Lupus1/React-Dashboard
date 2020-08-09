@@ -21,26 +21,50 @@ class Table extends Component{
                     <tr>
                     <th scope="row">Emp 1</th>
                     <td>Frontend Development</td>
-                    <td>--checkbox here--</td>
+                    <td><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            Checkbox
+                        </label>
+                        </div>
+                    </td>
                     <td>edit and delete button</td>
                     </tr>
                     <tr>
                     <th scope="row">Emp 2</th>
                     <td>Backend Development</td>
-                    <td></td>
+                    <td><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            Checkbox
+                        </label>
+                        </div>
+                    </td>
                     <td>@fat</td>
                     </tr>
                     <tr>
                     <th scope="row">Emp 3</th>
                     <td>Testing</td>
-                    <td></td>
+                    <td><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            Checkbox
+                        </label>
+                        </div>
+                    </td>
                     <td>@twitter</td>
                     {/* <td colspan="2">Larry the Bird</td> */}
                     </tr>
                     <tr>
                     <th scope="row">Emp 4</th>
                     <td>Deployment</td>
-                    <td></td>
+                    <td><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            Checkbox
+                        </label>
+                        </div>
+                    </td>
                     <td>@fat</td>
                     </tr>
                 </tbody>
