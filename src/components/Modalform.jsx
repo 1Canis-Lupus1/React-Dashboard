@@ -44,26 +44,26 @@ class InpForm extends Component{
                     }}
                     onFinish={this.onFinish}
                 >
-                    <Form.Item label="Name:" name='name' rules={[{required: true, message: "Select Name",},]}>
+                    <Form.Item label="Name:" name='name' rules={[{required: true, message: "Enter Name",},]}>
                     <Input />
                     </Form.Item>
-                    <Form.Item label="Gender:" name='gender'>
+                    <Form.Item label="Gender:" name='gender' rules={[{required: true, message: "Select Gender",},]}>
                     <Select>
                         <Select.Option value="male">Male</Select.Option>
                         <Select.Option value="female">Female</Select.Option>
                         <Select.Option value="prefer">Prefer Not Answering</Select.Option>
                     </Select>
                     </Form.Item>
-                    <Form.Item label="Age:" name='age'>
+                    <Form.Item label="Age:" name='age' rules={[{required: true, message: "Enter Age",},]}>
                     <Input />
                     </Form.Item>
-                    <Form.Item label="Designation:" name='designation'>
+                    <Form.Item label="Desig. :" name='designation' rules={[{required: true, message: "Enter Designation",},]}>
                     <Input />
                     </Form.Item>
-                    <Form.Item label="Department:" name='department'>
+                    <Form.Item label="Depart. :" name='department' rules={[{required: true, message: "Enter Department",},]}>
                     <Input />
                     </Form.Item>
-                    <Form.Item label="Join Date:" name='date'>
+                    <Form.Item label="Join Date:" name='date' >
                     <DatePicker />
                     </Form.Item>
                     <Form.Item >

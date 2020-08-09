@@ -25,6 +25,7 @@ class ButtonFnc extends Component{
             <Modal
                 title="Add Employee"
                 style={{ top: 20 }}
+                footer={null}
                 visible={this.state.modal1Visible}
                 onOk={() => this.setModal1Visible(false)}
                 onCancel={() => this.setModal1Visible(false)}
